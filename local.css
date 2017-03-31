@@ -1,0 +1,30 @@
+#pagination-demo{
+    display: inline-block;
+    margin-bottom: 1.75em;
+    width: 100%;
+    margin-left: 25%;
+  }
+  
+#pagination-demo li{
+  display: inline-block;
+}
+
+.page-content{
+    background: #eee;
+    display: inline-block;
+    padding: 10px;
+    width: 100%;
+}
+
+.extra-content{
+    color: gray;
+    font-size: 15px;
+}
+
+.main-content{
+    font-size: 18px;
+}
+
+.shiftme{
+    padding-left:20px;
+}

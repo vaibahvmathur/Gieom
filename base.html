@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Gieoma Exercise</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript for Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Latest Fontawesome bootstap-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <!--Local CSS-->
+    <link href="./local.css" rel="stylesheet">
+    <!--Local JS-->
+    <script src="./localjavascript.js"></script>
+    <!-- JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!--Angular JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <!--Pagination -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twbs-pagination/1.4.1/jquery.twbsPagination.min.js"></script>
+
+    
+    
+</head>
+<body>
+
+    <div class="main-data" style="padding:2%">
+        <div class='well row'>
+            <div>
+                <p style="float: left; padding-left:5%">
+                    <img src="./logo.png" height="60%" width="60%" border="1px">
+                </p>
+                <p style="padding-top:1%">
+                    <h4 style="color:#6EFF33">Projects News</h4>
+                    <h4 style="color:#4DE4E4">Top Kickstarter Projects </h4>
+                </p>
+                
+            </div>
+        </div>
+        <div class="row">    
+            <div class="well col-xs-8 col-xs-offset-2">
+                <div class="input-group">
+                    <div class="input-group-btn search-panel-inverse">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept">Sort by</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a id='title' href="#">Title</a></li>
+                            <li class="divider"></li>
+                            <li><a id='alldefault' href="#">Creator</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">         
+                    <input type="text" class="form-control" id="searchfor" name="searchfor" placeholder="Search words in titles...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid">
+                <div id="page-content" class="page-content">
+                </div>
+            </div>
+        </div>
+        <ul id="pagination-demo" class="pagination pagination-lg"></ul>
+    </div>
+</body>
+</html>
+
+
+
