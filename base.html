@@ -43,14 +43,25 @@
             <div class="well col-xs-8 col-xs-offset-2">
                 <div class="input-group">
                     <div class="input-group-btn search-panel-inverse">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span id="search_concept">Sort by</span> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a id='title' href="#">Title</a></li>
-                            <li class="divider"></li>
-                            <li><a id='alldefault' href="#">Creator</a></li>
-                        </ul>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept_filter">Filter by</span> <span class="caret"></span>
+                            </button>
+                            <ul id='country' class="dropdown-menu " role="menu">
+                                <li class="dropdown-header .bg-primary"><strong>COUNTRY</strong></li>
+                            </ul>
+                            
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept_sort">Sort by</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a id='title' href="#">Title</a></li>
+                                <li class="divider"></li>
+                                <li><a id='alldefault' href="#">Creator</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <input type="hidden" name="search_param" value="all" id="search_param">         
                     <input type="text" class="form-control" id="searchfor" name="searchfor" placeholder="Search words in titles...">
